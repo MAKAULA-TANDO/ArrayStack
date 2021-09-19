@@ -21,14 +21,17 @@ public class ArrayStack {
  public int size() {
     return n;  
  }
-
+public void newArray(int np){
+    
+}
 public void resize(){
-         String [] b = new String[5];
-         for (int i = 0;i<n;i++){
-             b[i]=a[i];
-         }
-         a=b;
-     }
+    
+  String [] b = new String[Math.max(n*2,1)];
+      for (int i = 0; i < n; i++) {
+      b[i] = a[i];
+      }
+    a = b;
+  }
  public void set(int i, String x) {
    if ((i>=0)&&(i<n)){a[i] = x;}
   }

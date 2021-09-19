@@ -20,14 +20,13 @@ public class NewMain {
        as.set(1, "Lundi");
        as.set(2, "Langa");
        System.out.println(as.get(1));
-       ArrayStack ss = new ArrayStack(0);
-       ss.set(0, "Sakhumzi Chuthsela");
-       System.out.println(ss.get(0));
-       System.out.println(as.size());
-       as.add(3, "Tando");
-        as.remove(3);
-        as.resize();
-        System.out.println(ss.get(3));
+        System.out.println(as.size());
+       ArrayStack obj = new ArrayStack(0);
+       obj.add(0, "Tando");
+        System.out.println(obj.get(0));
+       obj.resize();
+       obj.remove(0); 
+       System.out.println(obj.get(0));
     }
     
 }
